@@ -5,6 +5,14 @@ const fs = require('fs');
 const mnemonic = fs.readFileSync("../.secret").toString().trim();
 
 module.exports = {
+  compilers:{
+    solc:{
+      version:"0.4.24"
+    }
+  },
+  mocha: {
+    timeout: 100000
+  },
   networks: {
     development: {
       host: "127.0.0.1",
