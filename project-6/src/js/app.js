@@ -1,3 +1,5 @@
+import Web3 from "web3"; //Importing Web3 object
+
 App = {
     web3Provider: null,
     contracts: {},
@@ -83,7 +85,7 @@ App = {
     },
 
     getMetaskAccountID: function () {
-        web3 = new Web3(App.web3Provider);
+        var web3 = new Web3(App.web3Provider);
 
         // Retrieving accounts
         web3.eth.getAccounts(function(err, res) {

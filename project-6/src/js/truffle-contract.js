@@ -2,7 +2,7 @@
 (function (global){
 var ethJSABI = require("ethjs-abi");
 var BlockchainUtils = require("truffle-blockchain-utils");
-var Web3 = require("web3");
+import Web3 from "web3"; //Importing Web3 object
 
 // For browserified version. If browserify gave us an empty version,
 // look for the one provided by the user.
